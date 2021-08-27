@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utc-8">
+        <title> Teste Evento</title>
+
+    </head>
+    <body>
+        <button>Mudar Cor</button>
+
+        <script>
+            let btn = document.querySelector('button');
+
+            function random(number) {
+                return Math.floor(Math.random()*number);
+            }
+
+            function bgChange(){
+                let rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                document.body.style.backgroundColor = rndCol;
+            }
+
+            btn.addEventListener('click', bgChange)
+
+        </script>
+
+
+
+    </body>
+
+
+
+
+</html>
